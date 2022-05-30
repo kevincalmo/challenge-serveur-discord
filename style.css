@@ -1,0 +1,78 @@
+:root {
+    --first-color: #0097C7;
+    --body-color: #222222;
+    --todo-color: #2E2E2E;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+input {
+    background: transparent;
+    border: none;
+}
+
+p {
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+body {
+    background: var(--body-color);
+    overflow: hidden;
+}
+
+.container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 770px;
+    height: auto;
+    background: var(--todo-color);
+    border-radius: 15px;
+}
+
+/* TASK HEADER */
+.task-name input {
+    margin-top: 20px;
+    margin-bottom: 18px;
+    margin-left: 20px;
+
+}
+
+.task-create-options {
+    border-top: solid black;
+    border-bottom: solid black;
+}
+
+.task-create-option{
+    border-left: solid;
+}
+
+.task-header,
+.task-create-options,
+.tasks-tabs {
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+.task-create-options,
+.tasks-tabs,
+.task-create-options-input {
+    flex-direction: row;
+}
+
+.task-create-options {
+    justify-content: space-between;
+}
