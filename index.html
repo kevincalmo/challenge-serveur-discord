@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Todo list | HTML/CSS Challenge #1</title>
+    <link href="https://use.fontawesome.com/releases/v5.0.1/css/all.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body class="flex">
@@ -15,14 +16,14 @@
             </div>
             <div class="flex task-create-options">
                 <div class="flex task-create-options-input">
-                    <div class="task-create-option">
-                    <label for="task-date">Date</label>
-                    <input type="date" name="task-date" id="task-date">
-                </div>
-                <div class="task-create-option">
-                    <label for="isHot">Tâche urgente</label>
-                    <input type="checkbox" name="isHot" id="isHot">
-                </div>
+                    <div class="flex task-create-option">
+                    <img src="./horloge.svg" width="20" height="20" alt="">
+                    <input type="text" name="task-date" id="task-date" placeholder="Date">
+                    </div>
+                    <div class="task-create-option-check">
+                        <label for="isHot">Tâche urgente</label>
+                        <input type="checkbox" name="isHot" id="isHot">
+                    </div>
                 </div>
                 
                 <div class="task-button">
@@ -63,7 +64,7 @@
                                 <p>Urgent</p>
                             </div>
                             <div class="task-option-date">
-                                {# Ajouté un canva #}
+                                <img src="./horloge.svg" width="20" height="20" alt="">
                                 <p>01 Juin 2022 à 10:00</p>
                             </div>
                             <div class="task-option-delete">
@@ -88,7 +89,7 @@
                         </p>
                         <div class="task-options">
                             <div class="task-option-date">
-                                {# Ajouté un canva #}
+                                <img src="./horloge.svg" width="20" height="20" alt="">
                                 <p>01 Juin 2022 à 10:00</p>
                             </div>
                             <div class="task-option-delete">
@@ -113,7 +114,7 @@
                         </strike>
                         <div class="task-options">
                             <div class="task-option-date">
-                                {# Ajouté un canva #}
+                                <img src="./horloge.svg" width="20" height="20" alt="">
                                 <p>01 Juin 2022 à 10:00</p>
                             </div>
                             <div class="task-option-delete">
