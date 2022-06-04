@@ -22,7 +22,7 @@ input {
     border: 0;
 }
 
-input[type='text']:focus-visible{
+input[type='text']:focus-visible {
     outline: none;
 }
 
@@ -122,6 +122,7 @@ body {
 .task-create-option-check {
     border-left: 1px solid #474747;
     padding-left: 10px;
+    flex-direction: row;
 }
 
 .task-create-options-input {
@@ -150,3 +151,23 @@ body {
 }
 
 /* TASKS-TABS */
+.tasks-tabs {
+    border-top: 1px solid #333333;
+    border-bottom: 1px solid #333333;
+    margin-top: 3px;
+    height: auto;
+}
+
+.tasks-tab {
+    height: 41px;
+    width: 116px;
+    flex-direction: row;
+    border-left:#333333 solid 1px;
+    border-right:#333333 solid 1px;
+}
+.tasks-tab p{
+    margin-right: 15px;
+}
+.tasks-tab.active{
+    color: white;
+}
